@@ -6,7 +6,7 @@ FactoryBot.define do
     :password,
     :name,
     :description,
-    :state,
+    :state
   ] do |n|
     "string#{n}"
   end
