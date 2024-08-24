@@ -13,7 +13,6 @@
  *= require_tree .
  *= require_self
  */
-//= require material-design-lite/material.min.css
 
 body {
   min-height: 100vh;
