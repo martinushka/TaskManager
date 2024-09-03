@@ -40,12 +40,6 @@ class Api::V1::TasksController < Api::V1::ApplicationController
 
   private
 
-  def set_task
-    @task = Task.find(params[:id])
-  rescue ActiveRecord::RecordNotFound
-    render json: { error: 'Task not found' }, status: :not_found
-  end
-
   def task_params
     params.require(:task).permit(:name, :description, :author_id, :assignee_id, :state_event)
   end
